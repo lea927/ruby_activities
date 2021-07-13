@@ -3,9 +3,13 @@
 # TASK:
 # Given a year, return the century it is in.
 
-century_from_year(1705) == 18
-century_from_year(1900) == 19
-century_from_year(1601) == 17
-century_from_year(2000) == 20
+def century_from_year(year)
+  year%100 == 0 ? year/100 : year/100+1
+end
+
+p century_from_year(1705) == 18
+p century_from_year(1900) == 19
+p century_from_year(1601) == 17
+p century_from_year(2000) == 20
 
  
